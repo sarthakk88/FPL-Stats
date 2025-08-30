@@ -28,21 +28,22 @@ player_orders = {
     ],
     "defenders": [
         "first_name", "second_name", "team_against", "Home_Away", "minutes", "xGC", 
-        "total_points", "xPoints", "goals_scored", "assists",
+        "total_points", "xPoints", "xGI", "goals_scored", "assists",
         "clean_sheets", "goals_conceded", "xG", "xA", "defensive_points", 
         "clearances_blocks_interceptions","recoveries", "tackles", "defensive_contribution",
         "bonus", "form", "yellow_cards", "red_cards"
     ],
     "midfielders": [
         "first_name", "second_name", "team_against", "Home_Away", "minutes",
-        "xG", "xA", "xGC", "total_points", "xPoints", "goals_scored", "assists",
-        "clean_sheets", "goals_conceded", "defensive_points", "clearances_blocks_interceptions",
+        "xG", "xA", "xGI", "total_points", "xPoints", "goals_scored", "assists",
+        "xGC", "clean_sheets", "goals_conceded", "defensive_points", "clearances_blocks_interceptions",
         "recoveries", "tackles", "defensive_contribution",
         "bonus", "form", "yellow_cards", "red_cards"
     ],
     "attackers": [
         "first_name", "second_name", "team_against", "Home_Away", "minutes",
-        "xG", "xA", "total_points", "xPoints", "goals_scored", "assists", "bonus", "form",
+        "xG", "xA", "xGI", "total_points", "xPoints", "goals_scored", "assists", "bonus", "form",
         "defensive_contribution", "defensive_points", "yellow_cards", "red_cards"
     ]
+
 }
