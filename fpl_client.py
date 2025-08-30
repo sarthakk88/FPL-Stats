@@ -263,6 +263,7 @@ class FPLClient:
                     "minutes"                        : tot.minutes,
                     "xG"                            : per90.get("expected_goals", np.nan),
                     "xA"                            : per90.get("expected_assists", np.nan),
+                    "xGI"                           : per90.get("expected_goals", 0) + per90.get("expected_assists", 0) if not (np.isnan(per90.get("expected_goals", np.nan)) or np.isnan(per90.get("expected_assists", np.nan))) else np.nan,
                     "xGC"                           : per90.get("expected_goals_conceded", np.nan),
                     "xPoints"                       : per90.xPoints,
                     "total_points"                  : per90.total_points,
@@ -314,4 +315,5 @@ class FPLClient:
     async def attackers_stats(self, last:int=5) -> dict[str,pd.DataFrame]:
         # FWD weights: goals 4 , assists 3 , clean-sheet 0
         return await self._position_stats(position_code=4, last=last,
+
                                     xp_weights=(4,3,0))
